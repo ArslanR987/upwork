@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--green-color : #2B352C;
+	--orange-color: #8E511C;
+}
+body{
+	font-family: 'neue-montreal', 'Neue Montreal', sans-serif;
+}
+#navbar{
+	position: absolute;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: transparent;
+	left: 0%;
+	top: 0%;
+	z-index: 999;
+	width: 100%;
+}
+#navbar #logo{
+	margin-left: 100px;
+}
+#navbar button{
+	width: 180px;
+	height: 56px;
+	border-radius: 80px;
+	border: 1px solid white;
+	background: transparent;
+	font-size: 18px;
+	color: white;
+	margin-right: 100px;
+	cursor: pointer;
+}
+#navbar button .fa-solid{
+	margin: 5px;
+}
+#hero-section{
+	height: 120vh;
+	position: relative;
+    background: linear-gradient(0deg, var(--green-color) 60%, var(--green-color));
+	padding: 0px 100px 0px 100px;
+	overflow: hidden;
+}
+#hero-section img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#hero-overlay{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 50vh;
+	background: linear-gradient(0deg, transparent, rgba(142, 81, 28, 0.4));
+}
+#hero-content{
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+#hero-content p:first-child{
+	font-size: 84px;
+	font-weight: 700;
+	color: white;
+	line-height: 1;
+}
+#hero-content p:nth-child(2){
+	font-size: 18px;
+	font-weight: 400;
+	color: #EBEBEB;
+	margin-top: 28px;
+}
+#hero-img-bg{
+	position: absolute;
+	bottom: 0%;
+	right: 10%;
+	height: 90%;
+}
+#hero-img-bg img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#hero-content button{
+	width: 191px;
+	height: 56px;
+	background: #BB8D35;
+	border-radius: 80px;
+	color: white;
+	border: none;
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0px 15px 0px;
+	cursor: pointer;
+}
+#hero-content button p:first-child{
+	font-size: 18px;
+	font-weight: 600;
+	margin: 5px;
+}
+#hero-content button .fa-solid{
+	margin: 5px;
+	color: #ffffff;
+}
